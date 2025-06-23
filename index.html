@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--debut du fun-->
+<!-- Début de l'en-tête de la page -->>
 
     <title>PORTFOLIO</title>
     <link rel="shortcut icon" href="Image2/download.jpeg" type="image/x-icon"/>
-
+    <link rel="Stylesheet" href="Style.css">
+    <!--Style google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
 </head>
-<!--Barre de navigation brut-->
-    <Header>
+<!-- Barre de navigation principale -->
+    <Header >
         <nav>
-        <img src="Image2/Logo portfolio.jpg" alt="Logo" width="250px">
+        <img id="logo" src="Image2/porte flio logo.png" alt="Logo" width="200px">
         <h1 class="title">Bienvenue sur mon premier porrtfolio</h1>
-        <ul>
-        <li><a href="#acceuil">Acceuil</a></li>
-        <li><a href="#apropos">A propos</a></li>
-        <li><a href="#travail">Travail</a></li>
-        <li><a href="#CV">CV</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <ul id="ulist">
+        <li><a class="lien" href="#acceuil">Acceuil</a></li>
+        <li><a class="lien" href="#apropos">A propos</a></li>
+        <li><a class="lien" href="#travail">Travail</a></li>
+        <li><a class="lien" href="#CV">CV</a></li>
+        <li><a  class="lien"href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    <hr>
+    
     </Header>
 
-    <!--Le debut du commencement-->
-    <main>
-    <center>
-    <section id="apropos">
-        <h1 class="title"> TITOUAH ILYES</h1>
-        <h2> Developper full stack</h2>
-        <img src="Image2/Ma photo.jpeg" alt="My face">
-        <p class="title">je me presente je suis TITOUAH ILYES jeune Algerien etudiant en developpement web full stack........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus distinctio, quisquam dolores fugit ipsa. Reiciendis eum quaerat nulla a architecto fuga, enim et dolores, recusandae voluptatibus adipisci. Delectus, quibusdam?</p></section>
-        </center>
+    <!-- Section À propos de moi -->
+    <div id="apropos">
+    
+    <div class="bloc" >
+        <h1 class="titre"> TITOUAH ILYES</h1>
+        <h2 class="titre1">Developper full stack</h2>
+        <img class="photo" src="Image2/Ma photo.jpeg" alt="My face">
+       <div class="grid">
+        <p>je me presente je suis TITOUAH ILYES jeune Algerien etudiant en developpement web full stack........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus distinctio, quisquam dolores fugit ipsa. Reiciendis eum quaerat nulla a architecto fuga, enim et dolores, recusandae voluptatibus adipisci. Delectus, quibusdam?</p>
+        <p>je me presente je suis TITOUAH ILYES jeune Algerien etudiant en developpement web full stack........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus distinctio, quisquam dolores fugit ipsa. Reiciendis eum quaerat nulla a architecto fuga, enim et dolores, recusandae voluptatibus adipisci. Delectus, quibusdam?</p>
+        <p>je me presente je suis TITOUAH ILYES jeune Algerien etudiant en developpement web full stack........ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus distinctio, quisquam dolores fugit ipsa. Reiciendis eum quaerat nulla a architecto fuga, enim et dolores, recusandae voluptatibus adipisci. Delectus, quibusdam?</p>
+</div>
+    </div>
+    </div>
         <section id="travail">
             <h1 class="Travaux">Les travaux que j'aimerais faire</h1>
             <iframe src="https://gomycode.com/dz/fr/" frameborder"0" width="400px"   height="400px"></iframe> 
             <iframe src="https://www.tayara.tn/" frameborder"1" width="400px" height="400px"></iframe>
             <iframe  src="https://indrive.com/" frameborder"0" width="400px" height="400px"></iframe>
             
-            <section id="CV"><h1>Veuillez svp consulter mon cv c'est gratuit: <a href="Image2/CV de ILYES TITOUAH.pdf">Mon CV</a></h1></section>
+            <section id="CV">
+                <ul><li><h1 class="cv">Veuillez svp consulter mon cv c'est gratuit: <a href="Image2/CV de ILYES TITOUAH.pdf">Mon CV</a></h1></li></ul></section>
             <iframe src="https://www.youtube.com/embed/BySTlhZ0dls" width="300px" height="200px"  frameborder"1" allow="accelerometer;
  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
           <audio controls><source src="Image2/7AN51TE0324_DCE3_Enregistrement-1.mp3" type="audio/mp3"></audio><video src="Image2/videoplayback.mp4"video/mp4"></video>
           <h3 id="h3"> Competence : html (pour l'instant)</h3>
           
-          <!--Bienvenue a table-->
+          <!-- Tableau des compétences techniques -->
           
           <table>
            
@@ -57,7 +68,7 @@
 
             <td> <img src="Image2/HTML5_.png" alt="logo html" width="120px"></td>
             <td> <img src="Image2/css3.png" alt="logo css" width="120px"></td>
-            <td> <img src="Image2/JavaScript-Logo.png"logo jvst" width="200px"></td>
+            <td> <img src="Image2/JavaScript-Logo.png" alt="logo jvst" width="200px"></td>
         </tr>
     <tr><td> <img src="Image2/python_logo_icon_168886.webp" alt="python" width="100px"></td>
     <td><img src="Image2/react.png" alt="react" width="120px"></td>
@@ -66,7 +77,7 @@
     </table>
  </section>
 
- <!--Pour ceux qui veulent s'interesser a moi-->
+<!-- Formulaire de contact -->
 
  <section id="Contact">
 
@@ -85,6 +96,9 @@
     </form>
  </section>
 </main><hr>
+
+<!-- Pied de page -->
+
 <footer><p>TOUT DROIT RESERVE; TITOUAH ILYES 2025</p>
 <a href="mailto:titouahilyes12@gmail.com">titouahilyes12@gmail.com</a><br><br>
 <a href="tel:+213698078305">+213698078305</a>
